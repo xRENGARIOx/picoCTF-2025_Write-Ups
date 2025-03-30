@@ -5,7 +5,7 @@ I made a cool website where you can announce whatever you want! Try it out!I hea
 ## Solve
 1. First we connect to the challenge with the given link.
 
-2. Lets inspect the source code to see if we can find something interesting.
+2. Let's inspect the source code to see if we can find something interesting.
 ```HTML
 <!doctype html> <title>SSTI1</title>  
 <h1> Home </h1>  
@@ -21,7 +21,7 @@ I made a cool website where you can announce whatever you want! Try it out!I hea
 
 4. If we search for what SSTI stands for, we will see that it means Server Side Template Injection, which according to PortSwigger "is when an attacker is able to use native template syntax to inject a malicious payload into a template, which is then executed server-side".
 
-5. "With this in mind, let's try to identify what kind of SSTI we are dealing with, let's try do identify it with the payloads from https://github.com/swisskyrepo/PayloadsAllTheThings
+5. With this in mind, let's try to identify what kind of SSTI we are dealing with, let's try do identify it with the payloads from https://github.com/swisskyrepo/PayloadsAllTheThings
 
 6. It seems like it is using Python + Jinja2. If we try this commands we get the correct results:
 ```python
